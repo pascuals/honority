@@ -61,7 +61,7 @@ contract PaperReview is Ownable, Pausable, IPaperReview {
         require(_publisherHash == paperDatas[_paperHash].publisherHash, 'Incorrect publisher');
 
         mapping(bytes32 => PaperStruts.ReviewData[]) storage _reviewsMapping = paperReviews[_paperHash];
-        PaperStruts.ReviewData[] memory _reviews;// = new PaperStruts.ReviewData[](100);
+        PaperStruts.ReviewData[] memory _reviews;
 
         uint index = 0;
 
