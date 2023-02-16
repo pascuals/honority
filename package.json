@@ -2,7 +2,8 @@
   "name": "@pascuals/honority",
   "version": "0.0.1",
   "scripts": {
-    "compile": "truffle compile"
+    "compile": "truffle compile",
+    "test": "truffle test"
   },
   "files": [
     "/contracts/**/*.sol",

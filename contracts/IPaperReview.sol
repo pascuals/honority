@@ -13,8 +13,6 @@ library PaperStruts {
         bytes32 reviewerHash;
         // Creation time
         uint created;
-        // Updated time
-        uint updated;
         // Ipfs file id hash
         bytes32 ipfsHash;
         // True when this is a positive review

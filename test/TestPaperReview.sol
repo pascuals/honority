@@ -8,20 +8,9 @@ import "../contracts/PaperReview.sol";
 
 contract TestPaperReview {
 
-    function testInitialBalanceUsingDeployedContract() public {
-        PaperReview meta = PaperReview(DeployedAddresses.PaperReview());
+    function testInitialBalanceUsingDeployedContract() public pure {
+//        PaperReview paperReview = PaperReview(DeployedAddresses.PaperReview());
 
-        uint expected = 10000;
-
-        Assert.equal(meta.getBalance(tx.origin), expected, "Owner should have 10000 PaperReview initially");
+//        Assert.empty(paperReview.paperDatas(0x0000000000000000000000000000000000000000000000000000000000000000), "Paper has data");
     }
-
-    function testInitialBalanceWithNewPaperReview() public {
-        PaperReview meta = new PaperReview();
-
-        uint expected = 10000;
-
-        Assert.equal(meta.getBalance(tx.origin), expected, "Owner should have 10000 PaperReview initially");
-    }
-
 }

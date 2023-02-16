@@ -24,11 +24,13 @@ contract Paper is Ownable, Pausable {
         string ipfsCid;
         // Reviewers array
         address[] reviewers;
+        // Ipfs hashes
+        bytes[] ipfsReviewCids;
     }
 
     // Relation of review processes by address and paperId hash
     // address -> publisher address
-    // bytes32 -> paper id
+    // string -> paper id
     // PaperData -> paper data
     mapping(address => mapping(string => PaperData)) public papers;
 
